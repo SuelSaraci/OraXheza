@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1890C5D7-F167-400A-AFC6-11F00E5659DF</title>
+    <defs>
+        <linearGradient x1="20.5167128%" y1="94.0351291%" x2="50%" y2="58.560612%" id="linearGradient-1">
+            <stop stop-color="#E8CE92" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E8CE92" stop-opacity="0.416592685" offset="49.9278217%"></stop>
+            <stop stop-color="#E8CE92" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="#landing" transform="translate(-811.000000, -229.000000)" fill="url(#linearGradient-1)">
+            <path d="M833,229 C845.150264,229 855,238.849736 855,251 C855,263.150264 845.150264,273 833,273 C820.849736,273 811,263.150264 811,251 C811,238.849736 820.849736,229 833,229 Z M833.5,238 C826.044156,238 820,244.044156 820,251.5 C820,258.955844 826.044156,265 833.5,265 C840.955844,265 847,258.955844 847,251.5 C847,244.044156 840.955844,238 833.5,238 Z" id="symbol-1"></path>
+        </g>
+    </g>
+</svg>

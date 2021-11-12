@@ -1,0 +1,526 @@
+body {
+  background-color: #141414;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #999;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.container p {
+  font-family: "Montserrat", sans-serif;
+  color: #999;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.container h1 {
+  padding-bottom: 40px;
+}
+.container a {
+  width: 200px;
+  height: 42px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style the navigation menu */
+
+/* Style the active link (or home/logo) */
+
+.gold-bg {
+  position: absolute;
+  top: -220px;
+  background: #e8ce92;
+  min-height: 1158px;
+  width: 810px;
+  right: -400px;
+  z-index: -100;
+  border-radius: 8000px;
+}
+.carousel {
+  display: table-caption;
+  margin-left: 425px;
+  top: -406px;
+}
+.carousel img {
+  width: 11px;
+  opacity: 0.4;
+}
+
+.shop-actions a:hover {
+  background-color: #e8ce92;
+  font-style: black;
+}
+
+.space-down {
+  margin-bottom: 8rem;
+}
+
+.tagline {
+  color: #e8ce92;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 76px;
+}
+
+a {
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+a {
+  color: #232323;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e8ce92;
+  transition: 0.5s ease-in-out;
+}
+
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+* Just a quick hamburger
+*/
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+* And let's fade it in from the left
+*/
+#menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1600px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+}
+
+.product-description {
+  margin-bottom: 6rem;
+}
+
+.btn-outline-warning {
+  color: #e8ce92;
+  border-color: #e8ce92;
+}
+
+.btn-outline-warning:hover {
+  background-color: #e8ce92;
+  border-color: #e8ce92;
+}
+
+h3.section-title {
+  color: #e8ce92;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.card {
+  background: #242424;
+  border-radius: 12px;
+}
+
+.card-body {
+  display: flex;
+}
+
+.card .product-name {
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 19px;
+  margin: 15px 0 5px;
+}
+
+.card .customer-rating {
+  color: #e8ce92;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.card .product-price {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card .product-price span {
+  color: #e8ce92 !important; /* only when needed, but not here :D */
+}
+
+.add-to-cart a {
+  border: 1px solid #e8ce92;
+  border-radius: 4px;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+  padding: 10px 15px;
+  color: #e8ce92;
+}
+.add-to-cart a:hover {
+  background: #e8ce92;
+  color: black;
+}
+.align-right {
+  text-align: right;
+}
+
+.feature-list .feature-block {
+  margin-bottom: 2rem;
+}
+
+#watch-features p {
+  font-family: "Montserrat", sans-serif;
+  color: #999;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+
+  font-size: 15px;
+}
+/*
+:first-child
+:nth()
+ */
+.feature-list .feature-block:last-child {
+  margin-bottom: 0;
+}
+
+/*
+direct descendant
+
++ sibling elements
+*/
+.feature-block > h4 {
+  margin: 0;
+  margin-top: 8px;
+  letter-spacing: -0.1px;
+  line-height: 22px;
+}
+
+.feature-block h4,
+.feature-block i {
+  color: #e8ce92;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.feature-description {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: -0.27px;
+  line-height: 21px;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.watch-on-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px) {
+  .col-md-4 {
+    width: 29.08%;
+  }
+}
+
+.product a {
+  border: 1px solid #e8ce92;
+  border-radius: 4px;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+  padding: 10px 15px;
+  color: #e8ce92;
+}
+.product h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #e8ce92;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 76px;
+}
+.product h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.product .btn {
+  background-color: #e8ce92;
+  width: 400px;
+  height: 50px;
+  margin-left: 455px;
+  line-height: 15px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+.product span {
+  color: #e8ce92;
+}
+.product p {
+  text-align: center;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.parent .items {
+  text-align: center;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin-left: 537px;
+  margin-top: 127px;
+}
+.email {
+  background: #e8ce92;
+  margin-top: 205px;
+  padding: 113px;
+}
+.email h2 {
+  text-align: center;
+  margin-bottom: 51px;
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.text-center {
+  text-align: center;
+}
+
+#subscribe-form [type="email"] {
+  background-color: #ffe2a1;
+  border: none;
+  padding: 15px 20px;
+  width: 350px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#subscribe-form [type="email"]:focus {
+  outline: 0;
+  box-shadow: 1px 1px 5px #444;
+}
+
+#subscribe-form [type="email"],
+#subscribe-form [type="email"]::placeholder {
+  color: #444;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+#subscribe-form input[type="submit"] {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.86px;
+  line-height: 16px;
+  text-align: center;
+  border: none;
+  background-color: #000;
+  padding: 19px 40px;
+  border-radius: 4px;
+  position: relative;
+  top: -1px;
+}
+
+.footer li {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+.footer li span {
+  color: #e8ce92;
+}
+.footer img {
+  padding-top: 154px;
+  margin-left: 50px;
+}
+.copyright {
+  background-color: #242321;
+  height: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .container img {
+    width: 200px;
+    margin-left: 300px;
+    top: -500px;
+    z-index: 1;
+  }
+  .container .gold-bg {
+    width: 750px;
+    min-height: 800px;
+  }
+}
+.parent .items {
+  text-align: center;
+}

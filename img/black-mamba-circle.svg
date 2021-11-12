@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="112px" viewBox="0 0 112 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>6AF91D40-E1E9-410D-90A5-71A9E75E8581</title>
+    <defs>
+        <linearGradient x1="20.5167128%" y1="94.0351291%" x2="50%" y2="58.560612%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.416592685" offset="49.9278217%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="#landing" transform="translate(-1126.000000, -767.000000)" fill="url(#linearGradient-1)">
+            <path d="M1182,767 C1212.92795,767 1238,792.072054 1238,823 C1238,853.927946 1212.92795,879 1182,879 C1151.07205,879 1126,853.927946 1126,823 C1126,792.072054 1151.07205,767 1182,767 Z M1183,790 C1164.22232,790 1149,805.222319 1149,824 C1149,842.777681 1164.22232,858 1183,858 C1201.77768,858 1217,842.777681 1217,824 C1217,805.222319 1201.77768,790 1183,790 Z" id="symbol-2"></path>
+        </g>
+    </g>
+</svg>
