@@ -8,8 +8,7 @@ body {
   line-height: 24px;
   padding-top: 60px;
   padding-bottom: 60px;
-  overflow: hidden;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 .container p {
   font-family: "Montserrat", sans-serif;
@@ -404,7 +403,6 @@ direct descendant
   background-color: #e8ce92;
   width: 400px;
   height: 50px;
-  margin-left: 455px;
   line-height: 15px;
   font-weight: 800;
   margin-top: 50px;
@@ -481,15 +479,92 @@ direct descendant
   font-weight: 500;
   letter-spacing: 1.86px;
   line-height: 16px;
-  text-align: center;
+
   border: none;
   background-color: #000;
   padding: 19px 40px;
   border-radius: 4px;
-  position: relative;
+
   top: -1px;
 }
+.nav-bar {
+  display: none;
+}
 
+.menu-bar {
+  position: absolute;
+  top: 38px;
+  right: 18px;
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.menu-bar .line {
+  width: 25px;
+  height: 2px;
+  margin: 3px;
+  background: #000;
+  transition: all 300ms ease-out;
+}
+
+.nav-bar .nav-items {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 201, 18, 255);
+  clip-path: circle(30px at 93% 8%);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.nav-bar .nav-items .nav-links {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-bar.toggle .nav-items {
+  clip-path: circle(100%);
+  opacity: 1;
+}
+
+.nav-bar.toggle .menu-bar {
+  box-shadow: none;
+}
+
+.nav-bar.toggle .menu-bar .line:nth-child(1) {
+  transform: rotate(-45deg);
+  margin: 0;
+}
+.nav-bar.toggle .menu-bar .line:nth-child(3) {
+  opacity: 0;
+}
+.nav-bar.toggle .menu-bar .line:nth-child(2) {
+  transform: rotateZ(45deg);
+  margin: -2px;
+}
+.title {
+  height: 100%;
+  transform: translate(0%, 45%);
+}
+.title h1 {
+  text-align: center;
+  font-size: 3em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #6f4a8e;
+}
 .footer li {
   margin-bottom: 20px;
   font-size: 12px;
@@ -505,22 +580,136 @@ direct descendant
   padding-top: 154px;
   margin-left: 50px;
 }
+.footer ul {
+  margin-top: 10rem;
+}
 .copyright {
   background-color: #242321;
   height: 50px;
 }
-@media only screen and (max-width: 768px) {
-  .container img {
-    width: 200px;
-    margin-left: 300px;
-    top: -500px;
-    z-index: 1;
-  }
+.butoni {
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 768px) {
   .container .gold-bg {
-    width: 750px;
-    min-height: 800px;
+    display: none;
+  }
+  .container {
+    width: fit-content;
+  }
+  .featured-watch {
+    padding: 1rem 0rem;
+  }
+  .featured-watch .product-outline {
+    padding: 2rem;
+  }
+  .featured-watch .product-outline h1 {
+    font-size: 3rem;
+  }
+  .container p {
+    font-size: 13px;
+    padding-right: 3rem;
+  }
+  .shop-actions {
+    display: flex;
+  }
+  .shop-actions a {
+    width: 8rem;
+  }
+  .product-image .icon-golden-circle {
+    margin: 0 2rem;
+  }
+  #featured-watch {
+    padding: 1.5rem;
+  }
+
+  .card-body img {
+    margin: 1rem;
+  }
+  .feature-list {
+    padding: 2rem;
+  }
+  .items2 {
+    display: none;
+  }
+  .items {
+    display: none;
+  }
+  .product .btn {
+    width: 300px;
+  }
+  .product {
+    margin-top: 5rem;
+  }
+  .footer ul {
+    margin-top: 5rem;
+  }
+  .email h2 {
+    font-size: 1.4rem;
+  }
+  .card {
+    margin: 0 auto;
   }
 }
-.parent .items {
-  text-align: center;
+
+@media (max-width: 568px) {
+  .container .gold-bg {
+    display: none;
+  }
+  #subscribe-form [type="email"] {
+    width: 200px;
+  }
+  .image1 {
+    width: 80%;
+  }
+  .featured-watch .product-outline h1 {
+    font-size: 2.5rem;
+  }
+  .card {
+    margin: 2rem 1rem;
+  }
+
+  #featured-watch {
+    width: 18rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .container .gold-bg {
+    width: 372px;
+    right: 82px;
+  }
+  #menuToggle {
+    right: 200px;
+  }
+  .shop-actions {
+    display: flex;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .product-image {
+    margin-top: 5rem;
+    position: absolute;
+    left: 28rem;
+  }
+  .product-image #black-mamba {
+    margin-left: 100px;
+  }
+  .space-down {
+    margin-bottom: 21rem;
+    margin-right: 2rem;
+  }
+  .card-body {
+    padding: 0rem;
+  }
+  .feature-list {
+    padding-right: 3rem;
+  }
+  .section-title {
+    margin-right: 4rem;
+  }
+  .footer ul {
+  }
 }

@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content=" initial-scale=1.0">
     <title>We are rocking this field - Oraxheza</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +17,7 @@
         crossorigin="anonymous" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -39,11 +40,7 @@
                     <span></span>
 
                    
-                    <ul id="menu" style="height: 950px;
-        width: 533px;
-        left: -368px;
-        margin-bottom: 73px;
-        top: -1pc;">
+                    <ul id="menu">
                         <a href="#">
                             <li>Home</li>
                         </a>
@@ -56,7 +53,7 @@
                         <a href="#">
                             <li>Contact</li>
                         </a>
-                        <a href="https://erikterwan.com/" target="_blank">
+                        <a href="#" >
                             <li>Show me more</li>
                         </a>
                     </ul>
@@ -123,11 +120,13 @@
                     <img src="img/gold-circle-icon.svg" alt="Gold Circle" class="icon-golden-circle"
                         style="position: absolute;">
                     <img src="img/featured_watch.png" alt="Rolex Luxury Watch" width="380" id="featured-watch">
-                    <img src="./img/black-mamba-circle.svg" alt="" style="-webkit-filter: grayscale(1) invert(1);
+                    <div class="white-circle">
+                    <img src="./img/black-mamba-circle.svg" id="black-mamba" alt="" style="-webkit-filter: grayscale(1) invert(1);
                         filter: grayscale(1) invert(1);
-                        margin-left: 320px;
+                        margin-left: 185px;
                         width: 100px;
                     ">
+                    </div>
 
                 </div>
             </div>
@@ -141,6 +140,7 @@
 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
+                        
                         <div class="card mb-3">
                             <div class="card-body py-4">
                                 <div class="product-thumbnail ms-md-2 me-md-5">
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                     </div>
                     <div class="col">
                         <div class="card mb-3">
@@ -289,6 +289,7 @@
         <div class="feature-list d-flex justify-content-center">
 
             <div class="col col-12 col-md-4 align-right">
+                <div class="items">
                 <div class="feature-block">
                     <i class="fas fa-battery-full"></i>
                     <h4 class="feature-name">
@@ -320,10 +321,12 @@
                     </p>
                 </div>
             </div>
-            <div class="col col-12 col-md-4 watch-on-display">
-                <img src="img/featured_rolex.png" alt="Watch Image" width="250" style="margin-left: 15px;">
+            </div>
+            <div class="col col-12 col-md-4 col-sm-2 watch-on-display" >
+                <img src="img/featured_rolex.png" alt="Watch Image" width="250" >
             </div>
             <div class="col col-12 col-md-4">
+                <div class="items2">
                 <div class="feature-block">
                     <i class="fas fa-battery-full"></i>
                     <h4 class="feature-name">
@@ -356,22 +359,26 @@
                 </div>
             </div>
         </div>
+        </div>
 
         <div class="product">
             <div class="row">
                 <div class="col-md-12">
-                    <img src=".img/logo.svg" alt="" style="margin-left: 584px; padding-top: 300px;">
+                    <img src=".img/logo.svg" alt="" >
                     <h1>ExtraLux</h1>
                     <h2><span>$</span>8599</h2>
                     <p> <br> But I must explain to you how all this mistaken idea of denouncing pleasure and <br>
                         praising pain was born and I will give you a complete account of the system.</p>
                     <div class="parent">
-                        <div class="items">
-                        <img class="image2" src="./img/large-gold-circle-icon.png" style="margin:7rem 54rem" />
-                        <img class="image1" src="./img/watch-grande.png" style="margin-left: 0rem;" />
+                        <div class="items3" style="display: flex; justify-content: center;">
+                    <div class="img2">
+                        <img class="image1" src="./img/watch-grande.png" />
                     </div>
                     </div>
-                    <button type="button" style="margin-left: 47rem;" class="btn">Shop Now</button>
+                    </div>
+                    <div class="butoni">
+                    <button type="button" class="btn">Shop Now</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -380,9 +387,10 @@
             <div class="row">
 
                 <div class="col-md-12">
-
+                     <div class="items" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                     <form id="subscribe-form" class="text-center">
-                        <input type="email" placeholder="Your email">
+                        
+                        <input type="email" placeholder="Your email" class="textemail">
                         <input type="submit" name="submit" value="SEND">
                         <!-- <button>
                         <i class="far fa-paper-plane"></i>
@@ -390,16 +398,17 @@
                     </button> -->
                     </form>
                 </div>
+                </div>
             </div>
         </div>
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-3">
                         <img src="./img/gold-circle-icon.svg" alt="">
                     </div>
-                    <div class="col-2">
-                        <ul style="margin-top: 150px;">
+                    <div class="col-sm-3">
+                        <ul>
                             <li> <span>OUR COMPANY</span></li>
                             <li>Privacy Policy</li>
                             <li>Shipping & Return</li>
@@ -407,8 +416,8 @@
                             <li>About us</li>
                         </ul>
                     </div>
-                    <div class="col-2">
-                        <ul style="margin-top: 150px;">
+                    <div class="col-sm-3">
+                        <ul >
                             <li> <span> FOLLOW US </span></li>
                             <li>Facebook</li>
                             <li>Twitter</li>
@@ -416,8 +425,8 @@
                             <li>Youtube</li>
                         </ul>
                     </div>
-                    <div class="col-2">
-                        <ul style="margin-top: 150px;">
+                    <div class="col-sm-3">
+                        <ul >
                             <li> <span> SHOP INFO</span></li>
                             <li> Addres:Alajdin Xhezairi, Prizren 20000,Kosova </li>
                             <li>Tel: +383 44 400 145</li>
@@ -433,9 +442,8 @@
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-            crossorigin="anonymous"></script>
+        
+           
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
         </script>
